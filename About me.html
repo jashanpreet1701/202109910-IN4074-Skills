@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #85e8f1;
+            color: #d672b5;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        section {
+            background-color: #a0e3be;
+            padding: 1em;
+            margin-bottom: 1em;
+            box-shadow: 0 0 10px rgba(15, 14, 14, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .intro img {
+            width: 150px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 20px;
+            object-fit: cover;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 0.5em;
+            border: 1px solid #7a6caa;
+        }
+
+        .contact-form button[type="submit"] {
+            background-color: #333;
+            color: #f15fa8;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #b4aaaa;
+            padding: 1em;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <img src="C:\xampp1\htdocs\Skills  presentation\pic 1.jpg" alt="Your Photo">
+            
+            <img src="C:\xampp1\htdocs\Skills  presentation\pic 2.jpg" alt="Your Photo">
+
+            <img src="C:\xampp1\htdocs\Skills  presentation\pic 3.jpg" alt="Your Photo">
+
+            <h2>Introduction</h2>
+            <p>
+                I'm jashanpreet kaur, the creator of this website. 
+                I'm passionate about web development and love the challenge of building 
+                beautiful and functional websites.
+            </p>
+        </section>
+
+        <section class="background">
+            <h2>Background</h2>
+            <p>
+                I have completed my secondary education in Non-Medical from dav International School, Sri Muktsar sahib. 
+                I've also completed a Certificate in Computer Basics from CITC, which further 
+                developed my skills in web development.
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <p>
+                I'm proficient in the following web development technologies:
+            </p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <p>
+                Here are some of the projects I've worked on:
+            </p>
+            <ul>
+                <li>AS WATCH GALLERY</li>
+                <li>JG saree heaven</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>
+                If you're interested in connecting or have any questions, 
+                feel free to reach out using the form below:
+            </p>
+            <form class="contact-form" action="send_message.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; jashanpreet kaur - 2024</p>
+    </footer>
+</body>
+</html>
